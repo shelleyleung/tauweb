@@ -1,0 +1,525 @@
+@charset "UTF-8";
+/* CSS Document */
+*{ margin:0px; padding:0px;}
+body{
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 11pt;
+	font-weight: 300;
+	background-color: #ffffff;
+}
+
+
+
+/*取消导航前圆形标识*/
+ul {
+        list-style: none;
+    }
+
+/*设置序号为小圆圈*/
+ol{
+	list-style: circle;
+}
+.icon{ display:none;}
+/*取消导航下划线*/
+a {
+        text-decoration: none;
+}
+/*图片大小*/
+img{ 
+	width: 100%;
+}
+
+/*导航栏*/
+.header{
+	padding: 0 0 0 0px;
+	margin: 0;
+	height: 60px;
+	background: #f19322;
+	position: relative;
+	margin-top: 0px;
+}
+
+/*一级菜单*/
+.header-ul{
+	float:right;
+	list-style: none;
+	margin-right: 40px;
+	margin-top: 5px;
+	background: #f19322;
+}
+/*一级菜单内元素*/
+ .header-ul li {
+        float:left;
+        margin-top: 0px;
+	 margin-left: 25px;
+	 padding-top: 5px;
+	 background: #f19322;
+    }
+
+/*一级菜单链接样式*/
+.header-ul a {
+	        height: 20px;
+            color: #FFFFFF;
+            display: block;
+            line-height: 48px;
+            font-weight: 500;
+            font-size:14px;
+	background: #f19322;
+}
+
+.header-ul li a:hover{
+	color: black;
+}
+/*菜单logo块*/
+.logo{
+	width: 30px;
+	height: 30px;
+	margin-left: 30px;
+    margin-bottom: 15px;
+	margin-right: 5px;
+	float: left;
+	color: #fff;
+	font-size: 12px;
+    margin-top: 14px;
+
+}
+
+/*why tau和features的板块样式*/
+.abstruct-bg, .content-bg
+{
+	margin: 0px auto;
+	width: auto;
+	
+}
+
+@media (max-width:370px){
+	.abstruct-bg, .content-bg{
+		width: 95%;
+	}
+	
+}
+
+.parta
+{
+	margin-top: 30px;
+	text-align:center;
+	background-color: #fff;
+	width:100%;
+	height: 150px;
+    
+}
+ 
+.parta p{
+	font-size: 18px;
+	/*text-align: left;*/
+	padding: 10px 0;
+	display: flex;
+	justify-content: space-between;
+}
+
+.container
+{
+	margin: 0px auto;
+	width: 1200px;
+}
+.part0
+{
+	margin-top: 50px;
+    padding:10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.part1
+{
+    background: #fff;
+    width: 570px;
+    height: 250px;
+}
+.part2
+{
+    background: #fff;
+    width: 570px;
+    height: 250px;
+}
+
+.part3
+{
+    background: #fff;
+    width: 570px;
+    height: 400px;
+}
+
+.part4
+{
+    background: #fff;
+    width: 570px;
+    height: 400px;
+}
+
+/*whitepaper按钮样式*/
+.button
+{
+	padding: 1em 1.5em;
+    float: right;
+	/*margin-right: 100px;*/
+	margin-top: 10px;
+	background:#262626;
+	border-radius: 8px;
+	color: #fff;
+}
+
+/*contactus板块*/
+.contactus{
+	background-color: #ffffff;
+	text-align:center;		
+}
+
+.media{
+	padding-top: 10px;
+	background: #fff;
+	text-align:center;
+
+
+}
+.media li{
+	display: inline;
+	padding-left: 15px;
+}
+
+
+.media img{
+	height: 20px;
+	width: 20px;
+}
+.email
+{ 	
+	padding-top: 5px;
+	background: #fff;
+	text-align: center;
+	margin: auto;
+}
+.email button{
+	height: 1em;
+	width: 2.5em;
+	background-color: #f19322;
+}
+.row { 
+	margin: auto;
+	margin-top: 10px;
+	height: 26px;
+	line-height: 26px;
+	border-bottom: 2px solid #F19322;
+	width: 180px; 
+	
+     }
+
+/*.input { 
+	position:relative;
+	width: 100px;
+	height: 26px; 
+}*/
+.input input { 
+	text-align: center;
+	display: block;
+	width: 100%;
+	height: 26px;
+	border:none;
+	background: none;
+	outline:none; 
+}
+.button-bg li {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.welcome {
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px;
+    text-align: center;
+    width: 100% !important;
+}
+.button {
+    display: inline-block; 
+    float: none;
+    margin-right: 0px;
+    margin-top: 30px;
+    background: #262626;
+    border-radius: 8px;
+    color: #fff;
+}
+/*欢迎板块*/
+.pic {
+	/*background: url("bg2.jpg") repeat 50% 0;*/
+	padding-left: 10px;
+	line-height: 30px;
+	width: 1430px; 
+	overflow:hidden;
+	margin:0 auto;
+}
+
+/*欢迎板块文字样式*/
+.welcome{
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+	font-size: 24px;
+	color: #f19322;
+	float: left;
+}
+
+/*欢迎板块文字样式*/
+.button-bg{
+	width: 280px;
+	height: 300px;
+	margin-left: 120px;
+	margin-top: 35px;
+   float:left;
+   width: 52%;
+
+	
+}
+
+/*欢迎板块图片样式*/
+.phone{
+	width: 200px; 
+	margin-right: 180px;
+	margin-top: 10px;
+	float:right;
+
+	
+}
+
+/*底部声明样式*/
+.copyright{
+	background: #000;
+	width:auto;
+	height: 150px;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+.copyright p{
+	
+	padding-top: 10px;
+	
+}
+
+.copyright a {
+	color: #F19322;
+	font-size: 12px;
+}
+
+.bottom{
+	padding-top: 25px;
+	padding-bottom: 20px;
+}
+.minh{ min-height:636px;}
+@media screen and (max-width: 1430px)
+{
+    .pic { 
+    padding-left: 0px; 
+    height: auto;
+    width:100%;
+}
+ 
+.phone{    width: 200px;
+    height: auto; 
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: right; 
+    }
+.button-bg  
+{
+    width: 52%;
+    height: 300px; 
+    margin-top: 35px;
+    float: left;        
+}
+.button-bg li{ float:left; width:50%; text-align:center;}
+.welcome {  
+    padding-top: 100px;
+    padding-left: 0px;
+    padding-right: 0px; 
+    text-align:center;
+    width:100% !important; 
+}
+.button 
+{
+    display:inline-block;
+    padding: 1em 3em;
+    float: none;
+    margin-right: 0px;
+    margin-top: 10px;
+    background: #262626;
+    border-radius: 8px;
+    color: #fff;
+}
+}
+
+@media screen and (max-width: 1200px)
+{
+    
+    .container { 
+    width: 100%;
+}
+.abstruct-bg, .content-bg { 
+    width: 100%;
+}
+.parta 
+{
+    padding:0px 10px;
+    width:auto;
+    height: auto;
+}
+.part0 { 
+    padding: 10px 10px; 
+}
+.part1 {
+    background: #fff;
+    width: 48%;
+    height: auto;
+    padding:0px 1%;
+}
+.part2 {
+    background: #fff;
+    width: 48%;
+    height: auto;
+    padding:0px 1%;
+}
+.part3 {
+    background: #fff;
+    width: 48%;
+    height: auto;
+    padding:0px 1%;
+}
+.part4 {
+    background: #fff;
+    width: 48%;
+    height: auto;
+    padding:0px 1%;
+}
+.phone 
+{
+    margin-right:150px;
+}
+.button-bg {
+    width: 48%; 
+}
+}
+ 
+
+@media all and (max-width: 991px) 
+{
+    .part0 { 
+    display:block;; 
+}
+    .part1 { 
+    width: 98%; 
+    margin-bottom:50px;
+    }
+    .part2 { 
+        width: 98%; 
+    }
+    .part3 { 
+        width: 98%; 
+    margin-bottom:50px;
+    }
+    .part4 { 
+        width: 98%; 
+    }
+    ol 
+    {
+        padding-left:10px;
+}
+.button-bg {
+    width: 100%;
+        float: none;
+        margin-left: 0px;
+}
+.phone {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    float: none;
+        margin-right: 0px;
+        text-align:center;
+}
+.phone img{ width:auto; max-width:100%;}
+}
+
+@media all and (max-width: 700px) 
+{
+    .header { 
+    height: auto;  
+    position:relative;
+}
+    .logo {
+    width: auto;
+    height: auto;
+    margin-left: 30px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    float: left;
+    color: #fff;
+    font-size: 12px;
+}
+.header-ul {
+    float: none; 
+    margin-right: 0px;
+    margin-top: 5px; 
+    overflow:hidden;
+    display:none;
+    position:absolute;
+    top:54px;
+    width:100%;
+}
+.header-ul a {
+    height: 30px;
+    color: #FFFFFF; 
+    line-height: 30px;
+    font-weight: 500;
+    font-size: 14px;
+    background: #f19322;
+    display:inline-block;
+}
+    .bar0, .bar1, .bar2, .bar3 {
+    width: auto; 
+}
+
+.icon{ display:block; width:40px; margin-right: 30px; float: right;     margin-top: 23px;}
+
+
+.minh{ min-height:384px;}
+
+.header-ul li {
+    float: none;
+    margin-top: 0px;
+    margin-left: 0px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background: #f19322;
+    width:100%;
+    text-align:center;
+}
+
+    }
+
+@media all and (max-width: 575px) 
+{
+     .button 
+    {
+        display:inline-block;
+        padding: 1em 2em;
+        float: none;
+        margin-right: 0px;
+        margin-top: 10px;
+        background: #262626;
+        border-radius: 8px;
+        color: #fff;
+    }
+   
+}

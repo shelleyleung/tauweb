@@ -1,0 +1,93 @@
+@charset "UTF-8";
+/* CSS Document */
+
+	*{
+		margin: 0;
+		padding: 0;
+		font-family: 'Source Sans Pro', sans-serif;
+		
+	}
+	
+	li{
+		list-style: none;
+	}
+	
+	header{
+		display: flex;
+		justify-content:space-between;
+	    align-items: center;
+		background-color: #F19322;
+		padding: 10px;
+	}
+	a {
+			text-decoration: none;
+	}
+	.linkbar{
+	align-items: baseline;
+		padding-right: 3%;
+	
+	}
+	
+	.community {
+		padding-top: 2%;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		
+	}
+.community li{
+	padding-top: 6px;
+}
+.community li a{
+	color: #1E1E1E;
+}
+.community li a:hover{
+	color:#f19322;
+}
+	
+	.linkbar li a:hover {
+		color: black;
+		
+	}
+	.linkbar li{
+		display: inline;
+		padding-left: 3px;;
+		font-size: 14px;
+	}
+	.linkbar li a{
+		color: white;
+	}
+	button{
+		padding: 1em 1.5em;
+		margin-top: 10px;
+		border-radius: 5px;
+		background: #f19322;
+	} 
+
+
+/*底部声明样式*/
+.copyright{
+	background: #000;
+	width:auto;
+	height: 150px;
+	margin-top: 20px;
+	text-align: center;
+	color: #fff;
+	font-size: 10px;
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, "sans-serif";
+}
+.copyright p{
+	
+	padding-top: 10px;
+	
+}
+
+.copyright a {
+	color: #F19322;
+	font-size: 12px;
+}
+
+.bottom{
+	padding-top: 25px;
+	padding-bottom: 20px;
+}

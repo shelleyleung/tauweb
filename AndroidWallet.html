@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Android Wallet</title>
+    <link href="indexstyle.css" rel="stylesheet" type="text/css" />
+    <link href="androidwallet.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<script type="text/javascript">
+
+function pk_required(text,alerttxt)
+{
+with (text)
+  {
+  if (value==null||value=="")
+    {alert(alerttxt);return false}
+  else {return true}
+  }
+}
+
+function pk_form(thisform)
+{
+with (thisform)
+  {
+  if (pk_required(pk,"Please input your private key")==false)
+    {pk.focus();return false}
+  }
+}
+	
+
+	
+	
+	function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function validate_form(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Not a valid e-mail address!")==false)
+  {email.focus();return false}
+}
+}
+</script>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <h1>
+                <img src="logo1.jpg"></h1>
+        </div>
+        <div class="icon">
+            <img src="icon.png" />
+        </div>
+        <ul class="header-ul">
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="AndroidWallet.html">Android Wallet</a></li>
+            <li><a href="#">TAUcoin Talk</a></li>
+            <li><a href="tradingclub.html">Trading Club</a></li>
+        </ul>
+        <div style="clear: both;">
+        </div>
+    </div>
+
+    <div class="minh">
+
+
+<form class="pk" action="submitpage.htm" onsubmit="return pk_form(this)" method="post">
+<input type="text" name="pk" placeholder="Input your private key here">
+<input type="submit" value="Submit">
+		</form>
+		
+<form class="pk" action="submitpage.htm" onsubmit="return validate_form(this);" method="post">
+<input type="text" name="email" placeholder="Input your email address here">
+<input type="submit" value="Submit">
+</form>
+    <section class="download-g">
+	<p>Google Play Download</p>
+	<button>TAU Google Page</button>
+	</section>
+    <section class="download-a">
+	<p>TAU APK Installer for Android</p>
+		<button>APK Download</button>
+	</section>
+    </div>
+
+
+    <div id="copyright" class="copyright">
+        <div class="bottom">
+            <p>
+                &copy;TAUCOIN.IO</p>
+            <p>
+                Email to: <a href="http://info@taucoin.io">Info@taucoin.io</a></p>
+            <p>
+                Addr: 2 Waters Park Drive. Suite 250. San Mateo. CA 94403</p>
+        </div>
+    </div>
+    <script src="jquery.js" type="text/javascript"></script>
+    <script type="text/javascript">
+        $(".icon").click(function () {
+            $("ul.header-ul").slideToggle(300, function () {
+            });
+        });
+    </script>
+</body>
+</html>
